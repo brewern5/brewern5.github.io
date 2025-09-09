@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Brewer | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nate Brewer</h1>
+            <p class="subtitle">Software Engineer | Web Developer | Problem Solver</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Hi! I'm Nate Brewer, a passionate software engineer with experience in building modern web applications, automating workflows, and solving complex problems. I love learning new technologies and collaborating with others to create impactful solutions.
+                </p>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Decentralized Edge Network Security</h3>
+                        <p>Developing a three-tier edge network in Java to explore multi-factor authentication methods for enhanced security. This project is currently in progress.</p>
+                        <a href="https://github.com/brewern5/DecentralizedEdgeSecurity" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Content Managment System</h3>
+                        <p>Collaborated in a team of three to design and implement a content management system inspired by Craigslist, featuring a custom API and MongoDB for scalable data storage.</p>
+                        <a href="https://github.com/EmmaNHop/ASE-220-MidtermProject/tree/Final" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>IoT based Irrigation-System</h3>
+                        <p>A Python-based irrigation system for Raspberry Pi that uses weather API data to make smart irrigation decisions and prevent overwatering.</p>
+                        <a href="https://github.com/brewern5/Irrigation-System" target="_blank">View on GitHub</a>
+                    </div>
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>Java</li>
+                    <li>JavaScript / TypeScript</li>
+                    <li>Python</li>
+                    <li>Node.js</li>
+                    <li>Cross-Platform Development</li>
+                    <li>Git & GitHub</li>
+                    <li>CI/CD</li>
+                    <li>AI</li>
+                    <li id="expand-skills" style="cursor:pointer;background:#00bcd4;color:#fff;font-weight:600;padding:0.5rem 1rem;border-radius:20px;font-size:1rem;" onclick="expandSkills()">And more...</li>
+                    <li class="extra-skill" style="display:none;">HTML5 & CSS3</li>
+                    <li class="extra-skill" style="display:none;">SQL</li>
+                    <li class="extra-skill" style="display:none;">NoSQL (MonogDB)</li>
+                    <li class="extra-skill" style="display:none;">Docker</li>
+                    <li class="extra-skill" style="display:none;">AWS</li>
+                    <li class="extra-skill" style="display:none;">Linux</li>
+                    <li class="extra-skill" style="display:none;">Agile/Scrum</li>
+                </ul>
+            </div>
+        </section>
+        <section id="resume" class="section">
+            <div class="container">
+                <h2>Resume</h2>
+                <a href="Nate_Brewer_Sept2025.pdf" download style="display:inline-block;margin-bottom:1rem;padding:0.5rem 1.2rem;background:#00bcd4;color:#fff;font-weight:600;border-radius:20px;text-decoration:none;">Download Resume (PDF)</a>
+                <div style="width:100%;max-width:700px;margin:0 auto;">
+                    <iframe src="Nate_Brewer_Sept2025.pdf" style="width:100%;height:600px;border:1px solid #ccc;"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Let's connect! You can reach me at <a href="mailto:brewern5@mymail.nku.edu">brewern5@mymail.nku.edu</a> or via the links below.</p>
+                <div class="social-links">
+                    <a href="https://github.com/brewern5" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/natebrewer09/" target="_blank">LinkedIn</a>
+                    <!-- Add more social links as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nate Brewer. All rights reserved.</p>
+        </div>
+        <script>
+        function expandSkills() {
+            var extras = document.querySelectorAll('.extra-skill');
+            extras.forEach(function(item) { item.style.display = 'inline-block'; });
+            var expand = document.getElementById('expand-skills');
+            expand.style.display = 'none';
+        }
+        </script>
+    </footer>
+</body>
+</html>
